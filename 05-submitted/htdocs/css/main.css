@@ -1,0 +1,167 @@
+:root
+{
+    --green: #5dd782;
+    --greenDark: #49b56a;
+    --greenLight: #67ee90;
+    --gray: #333;
+    --gray-light: #eee;
+    --white: #fff;
+}
+
+@font-face {
+    font-family: "Arial Narrow";
+    src: url("../fonts/arial-narrow.ttf");
+  }
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial Narrow";
+}
+
+#login .container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--gray-light);
+}
+
+#login .container form
+{
+    width: 500px;
+    height: auto;
+    background: var(--white);
+    padding: 30px;
+    padding-top: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#login .container form .group
+{
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    margin-bottom: 20px;
+}
+
+#login .container form .group label
+{
+    text-align: right;
+    padding-right: 5px;
+}
+
+#login .container form .submit
+{
+    width: auto;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.login
+{
+    padding: 5px 12px;
+    border: none;
+    border-radius: 3px;
+    background: var(--green);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+header
+{
+    display: grid;
+    grid-template-columns: 300px 200px 1fr 300px;
+    grid-template-rows: 40px 40px;
+    grid-template-areas: 
+        "left logo text right"
+        ". logo menu .";
+    width: 100%;
+    height: 80px;
+}
+
+header .left
+{
+    grid-area: left;
+    background: var(--gray);
+}
+
+header .right
+{
+    grid-area: right;
+    background: var(--gray);
+}
+
+header .text
+{
+    grid-area: text;
+    background: var(--gray);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .text button
+{
+    color: white;
+    background: transparent;
+    border: 0;
+    font-size: inherit;
+}
+
+header .text span
+{
+    padding-left: 10px;
+}
+
+header .text button:first-child::after
+{
+    content: ' |';
+    padding-right: 5px;
+}
+
+header .logo
+{
+    grid-area: logo;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .logo img
+{
+    width: calc(200px - 40px);
+    height: auto;
+}
+
+header .menu
+{
+    grid-area: menu;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu ul
+{
+    display: flex;
+    list-style-type: none;
+}
+
+header .menu li
+{
+    padding: 5px 12px;
+    
+}
+
+header .menu li a
+{
+    text-decoration: none;
+    color: inherit;
+}

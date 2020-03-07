@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>WS2021 S17 HU R2</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/my.css">
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Buildings and Flats <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Customers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Import/Export</a>
+				</li>
+			</ul>
+			<div class="ml-auto">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<p>Buildings:</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<select class="form-control" id="exampleFormControlSelect2">
+					<option>Flower Garden - 1234 Budapest, Flower street 567 (flats: 42)</option>
+					<option>Shanghai Park - 1098 Budapest, Central square 123 (flats: 60)</option>
+					<option>Green Trees - 9000 Győr, Millenium Park 1 (flats: 100)</option>
+				</select>
+			</div>
+		</div>
+		<div class="row top-margin-fix">
+			<div class="col-12">
+				<p>Flats:</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 text-center basic-padding">
+				<button class="btn btn-primary w-75 set-bg-shan-green">Add a flat</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<th scope="col">REF</th>
+							<th scope="col">Floor</th>
+							<th scope="col">Rooms</th>
+							<th scope="col">Net Area</th>
+							<th scope="col">Balcony</th>
+							<th scope="col">Orientation</th>
+							<th scope="col">Price</th>
+							<th scope="col">-</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+							<td><a href="#" data-toggle="modal" data-target=".bd-example-modal-lg">Edit</a></td>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+							<td><a href="#" data-toggle="modal" data-target=".bd-example-modal-lg">Edit</a></td>
+						</tr>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+							<td><a href="#" data-toggle="modal" data-target=".bd-example-modal-lg">Edit</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document">
+			<div class="modal-content">
+				<div class="container" style="padding: 50px 10px 50px 10px;">
+					<div class="row">
+						<div class="col-12 mr-auto">Edit Flat</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-6">
+							<p class="inliner">Ref: </p> <input class="inliner" type="number" class="form-control">
+							<br>
+							<br>
+							<p class="inliner">Rooms: </p> <input class="inliner" type="number" class="form-control">
+
+							<br>
+							<br>
+							<p class="inliner">Net Area: </p> <input class="inliner" type="number" class="form-control">
+							<br>
+							<br>
+							<p class="inliner">Price: </p> <input class="inliner" type="number" class="form-control">
+
+						</div>
+						<div class="col-6">
+
+							<p class="inliner">Floor: </p>
+							<select class="form-control inliner">
+								<option>1</option>
+							</select>
+							<br>
+							<br>
+							<p class="inliner">Orientation: </p><select class="form-control inliner">
+								<option>N</option>
+							</select>
+							<br>
+							<br>
+							<p class="inliner">Balcony Area: </p><input class="inliner" type="text" class="form-control">
+							<br>
+							<br>
+							<p class="inliner">Reserved: </p><select class="form-control inliner">
+								<option>Reserved</option>
+								<option>Sold</option>
+							</select>
+							<br>
+							<br>
+							<button class="btn btn-primary w-75 set-bg-shan-green">Save</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+
+<script src="js/bootstrap.js"></script>
+
+</html>

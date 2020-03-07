@@ -1,0 +1,8 @@
+Options +FollowSymLinks
+RewriteEngine On
+ 
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^/api/flats/(\d+)*$ ./api/flats.php?id=$1
+RewriteRule ^/api/buildings/(\d+)*$ ./api/buildings.php?id=$1

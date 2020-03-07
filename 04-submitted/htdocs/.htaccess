@@ -1,0 +1,17 @@
+Options +FollowSymLinks
+RewriteEngine On
+ 
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+ 
+
+#.htaccess a backend root mappadban
+
+
+#Pelda a specific file-ra valo atiranyitasra
+#RewriteRule ^/api/flats/(\d+)*$ ./api/flats.php?id=$1
+#RewriteRule ^/api/buildings/(\d+)*$ ./api/buildings.php?id=$1
+ 
+
+#EZ MINDENT AZ index.php-re iranyit
+#RewriteRule ^.*$ ./index.php

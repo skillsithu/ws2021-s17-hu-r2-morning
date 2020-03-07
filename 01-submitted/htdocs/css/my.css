@@ -1,0 +1,29 @@
+.top-margin-fix{
+    margin-top: 80px;
+}
+.basic-padding{
+    padding: 0px 0px 20px 0px;
+}
+.set-bg-shan-green{
+    background-color: #5dd782 !important;
+}
+.btn-primary{
+    border: unset;
+}
+.btn-primary:focus{
+    box-shadow: unset;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-bottom: black 3px solid;
+}
+.nav-item{
+    background-color: #ffffff !important;
+}
+.nav-link{
+    color: #5dd782 !important;
+
+}
+.inliner{
+    display: inline !important;
+}
